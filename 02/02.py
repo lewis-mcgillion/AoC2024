@@ -6,7 +6,9 @@ with open("./02_input.txt", 'r') as file:
         row = np.array(line.strip().split(), dtype=int)
         data.append(row)
 
-safe_count = 0;
+safe_count = 0
+
+# stinky brute force solution hehe
 for row in data:
     direction = 0  # 1 for ascending, -1 for descending
     safe = True
